@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/CalculateGame.dart';
-import 'package:my_app/WrapDemo.dart';
+import 'package:my_app/calculateGame.dart';
+import 'package:my_app/wrapDemo.dart';
+import 'package:my_app/tabs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,19 +28,29 @@ class MyApp extends StatelessWidget {
   //   );
   // }
 
+  // @override
+  // Widget build(BuildContext context) {
+  //   return MaterialApp(
+  //     title: 'Flutter Demo',
+  //     debugShowCheckedModeBanner: false,
+  //     theme: ThemeData(primaryColor: Colors.black),
+  //     home: Scaffold(
+  //       appBar: AppBar(
+  //         title: Text('Flutter App'),
+  //         toolbarHeight: 24,
+  //       ),
+  //       body: LayoutDemo(),
+  //     ),
+  //   );
+  // }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.black),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter App'),
-          toolbarHeight: 24,
-        ),
-        body: LayoutDemo(),
-      ),
+      home: Tabs(),
     );
   }
 }
