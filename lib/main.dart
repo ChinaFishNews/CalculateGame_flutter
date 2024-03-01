@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/calculateGame.dart';
+import 'package:my_app/pageViewFullPage.dart';
 import 'package:my_app/wrapDemo.dart';
 import 'package:my_app/tabs.dart';
 import 'package:my_app/appbar.dart';
 import 'appBar.dart';
+import 'pageView.dart';
+import 'pageViewBuilder.dart';
+import 'pageViewFullPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,15 +50,15 @@ class MyApp extends StatelessWidget {
   //   );
   // }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: Colors.black),
-      home: Tabs(),
-    );
-  }
+  // @override
+  // Widget build(BuildContext context) {
+  //   return MaterialApp(
+  //     title: 'Flutter Demo',
+  //     debugShowCheckedModeBanner: false,
+  //     theme: ThemeData(primaryColor: Colors.black),
+  //     home: Tabs(),
+  //   );
+  // }
 
   // @override
   // Widget build(BuildContext context) {
@@ -65,4 +69,14 @@ class MyApp extends StatelessWidget {
   //     home: AppBarPage(),
   //   );
   // }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primaryColor: Colors.black),
+      home: PageViewFullPage(),
+    );
+  }
 }
